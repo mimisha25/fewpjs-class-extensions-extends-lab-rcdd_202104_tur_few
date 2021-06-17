@@ -6,7 +6,6 @@ class Polygon {
      get countSides() {
          return this.sides.length
      }
-
      get perimeter() {
          return this.sides.reduce((accumulator, currentValue) => accumulator + currentValue);
      }
@@ -22,7 +21,6 @@ class Polygon {
      get isValid() {
          return(this.sides[0] === this.sides[1] && this.sides[1] === this.sides[2] && this.sides[2] === this.sides[3])
      }
-
      get area() {
          return this.sides[0]**2
      }
